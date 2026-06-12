@@ -1,0 +1,43 @@
+# --- Python & Django/Wagtail ---
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.python-version
+venv/
+env/
+.env*
+db.sqlite3
+*.mo
+*.egg-info
+/src/rivor/settings/local.py
+/src/media/
+/src/tmp/
+
+# --- Node & Tailwind ---
+node_modules/
+npm-debug.log
+
+# --- Editors/OS ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+.helix/
+.template-version
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+coverage.xml
+src/coverage/
+
+# --- Logs & Docs ---
+error.log
+log/
+docs/*.pdf
+docs/site/
+/docs/_build/
+
+# --- Data Dumps ---
+*.psql
