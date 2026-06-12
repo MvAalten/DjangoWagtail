@@ -2,9 +2,11 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches:
+      - '**'
   pull_request:
-    branches: [ "master", "main" ]
+    branches:
+      - '**'
 
 jobs:
   build-and-test:
@@ -40,4 +42,4 @@ jobs:
       - name: Run Tests
         run: pytest
         env:
-          DJANGO_SETTINGS_MODULE: rivor.settings.test
+          DJANGO_SETTINGS_MODULE: DjangoWagtail.settings.test
