@@ -1,0 +1,6 @@
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+# Keep linting strict everywhere, but ignore star imports in settings
+"DjangoWagtail/settings/*.py" = ["F403", "F405"]
