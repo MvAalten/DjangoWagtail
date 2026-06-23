@@ -58,7 +58,7 @@ MIDDLEWARE = [
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 ]
 
-ROOT_URLCONF = "djangowagtail.urls"
+ROOT_URLCONF = "DjangoWagtail.urls"
 
 TEMPLATES = [
     {
@@ -78,10 +78,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "djangowagtail.wsgi.application"
+WSGI_APPLICATION = "DjangoWagtail.wsgi.application"
 
 
-# Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
