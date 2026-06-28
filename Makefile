@@ -33,11 +33,18 @@ makemigrations:
 superuser:
 	docker compose exec web python manage.py createsuperuser
 
+.PHONY: up build tailwind
+
 up:
 	docker compose up -d
-#Spin up containers and force a fresh image build (great when requirements change)
+
 build:
+	npm install
+	npx tailwindcss -i ./static/src/input.css -o ./DjangoWagtail/static/css/output.css
 	docker compose up -d --build
+
+ css:
+	npx tailwindcss -i ./static/src/input.css -o ./DjangoWagtail/static/css/output.css --watch
 
 # View real-time logs from all running containers
 logs:
