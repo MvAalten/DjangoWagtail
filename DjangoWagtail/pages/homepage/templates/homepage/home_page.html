@@ -2,8 +2,9 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-  <h1 class="bg-green-500 w-50 h-20">
-    {{ self.title }}
-   </h1>
+  <div bg-black w-20 h-20>
+    {{ self.quote }}
+  </div>
+  {{ self.title }}
   {{ self.body }}
 {% endblock content %}
