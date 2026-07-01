@@ -1,0 +1,23 @@
+.primary-block {
+    display: flex;
+    backround-color: purle;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    height: 100%;
+    color: #ffffff;
+}
+.bg-primary {
+  background-color: #051424;
+}
+.border-primary {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+}
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  word-wrap: break-word;
+  color: #ffffff;
+}
