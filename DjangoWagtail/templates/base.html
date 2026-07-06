@@ -1,7 +1,7 @@
 {% load static wagtailcore_tags wagtailuserbar %}
 
 <!DOCTYPE html>
-<html class="w-full h-full px-14 bg-[#051424] flex-col" lang="en">
+<html class="w-full h-full px-14 bg-primary flex-col" lang="en">
     <head>
         <meta charset="utf-8" />
         <title>
@@ -11,7 +11,7 @@
             {% block title_suffix %}
             {% wagtail_site as current_site %}
             {% if current_site and current_site.site_name %}- {{ current_site.site_name }}{% endif %}
-            {% endblock %}
+            {% endblock %}    
         </title>
         {% if page.search_description %}
         <meta name="description" content="{{ page.search_description }}" />
@@ -24,6 +24,7 @@
         {% endif %}
 
         {# Global stylesheets #}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/output.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/djangowagtail.css' %}">
 
