@@ -615,15 +615,6 @@ video {
   --tw-border-opacity: 0.15;
 }
 
-.bg-\[\#051424\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 20 36 / var(--tw-bg-opacity, 1));
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
@@ -646,11 +637,6 @@ video {
   padding-top: 2.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -663,9 +649,4 @@ video {
 .text-\[\#10B981\] {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity, 1));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }

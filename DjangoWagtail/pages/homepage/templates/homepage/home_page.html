@@ -25,4 +25,7 @@
       </p>
     </div>
   </div>
+      {% for block in page.StreamField %}
+        {% include_block block %}
+      {% endfor %}
 {% endblock content %}
